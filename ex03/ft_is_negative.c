@@ -1,25 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   base.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pfaust <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/07/05 16:45:23 by pfaust            #+#    #+#             */
-/*   Updated: 2017/07/05 21:58:56 by pfaust           ###   ########.fr       */
+/*   Created: 2017/07/05 22:48:17 by pfaust            #+#    #+#             */
+/*   Updated: 2017/07/05 23:05:59 by pfaust           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c, int n);
+#include <unistd.h>
 
-void	ft_print_alphabet(void)
+int		ft_putchar(char c)
+{
+	write(1, &c, 1);
+	return (0);
+}
+
+void	ft_is_negative(int n)
 {
 	int i;
 
-	i = 'a';
-	while (i <= 'z')
-	{
-		ft_putchar(i);
-		i = i + 1;
-	}
+	if (n > 0)
+		{
+			ft_putchar(c);
+			c = 'P';
+		}
+
+	else
+		{
+			ft_puchar(c);
+			c = 'N';
+		}
+}
+
+int		main()
+{
+	ft_is_negative(int n);
+	return (0);
 }
