@@ -6,11 +6,11 @@
 /*   By: pfaust <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/05 16:45:23 by pfaust            #+#    #+#             */
-/*   Updated: 2017/07/05 21:58:56 by pfaust           ###   ########.fr       */
+/*   Updated: 2017/07/06 12:32:56 by pfaust           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c, int n);
+void	ft_putchar(char c);
 
 void	ft_print_alphabet(void)
 {
