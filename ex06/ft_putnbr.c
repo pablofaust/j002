@@ -6,7 +6,7 @@
 /*   By: pfaust <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/06 15:51:26 by pfaust            #+#    #+#             */
-/*   Updated: 2017/07/06 16:36:40 by pfaust           ###   ########.fr       */
+/*   Updated: 2017/07/06 18:00:46 by pfaust           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,15 @@ void	ft_putchar(char c);
 void	ft_putnbr(int n)
 {
 	char a;
+	int i;
+	i = 0;
 
-	a = n % 2;
-
-	ft_putchar(a);
+	while (n > 10)
+	{
+		a = n % 10;
+		a = a + '0';
+		ft_putchar(a);
+		i++;
+		n = n / (10 ^ i);
+	}
 }
