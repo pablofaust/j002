@@ -6,10 +6,17 @@
 /*   By: pfaust <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/06 15:51:26 by pfaust            #+#    #+#             */
-/*   Updated: 2017/07/06 15:54:25 by pfaust           ###   ########.fr       */
+/*   Updated: 2017/07/06 16:36:40 by pfaust           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_putchar(char c);
 
-void	ft_putnbr(int n);
+void	ft_putnbr(int n)
+{
+	char a;
+
+	a = n % 2;
+
+	ft_putchar(a);
+}
